@@ -1,0 +1,6 @@
+COLUMN TABLE "test_ta_mining_db::text_test" 
+(
+   "ID" INTEGER, 
+   "STRING" VARCHAR(200),
+   PRIMARY KEY ("ID") 
+)

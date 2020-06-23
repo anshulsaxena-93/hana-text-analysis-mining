@@ -1,0 +1,19 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "test_ta_mining_db::text_test",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "test_ta_mining_db::text_test_data.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "ID",
+                    "STRING"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+FULLTEXT INDEX "test_ta_mining_db::text_test_fti"
+ON "test_ta_mining_db::text_test" ("STRING")
+CONFIGURATION 'test_ta_mining_db::dict_and_rule_config'
+-- LANGUAGE COLUMN "LANG" 
+TEXT ANALYSIS ON

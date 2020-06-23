@@ -1,0 +1,21 @@
+ID: test_hana_mta
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: test_hana_db
+    type: hdb
+    path: test_hana_db
+    requires:
+      - name: test_hana_hdi
+      
+  
+      
+resources:
+  - name: test_hana_hdi
+    parameters:
+      config:
+        schema: test_hana_schema
+        database_id: 6588d6b3-4332-491c-aa06-1d1558a6e62a
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
